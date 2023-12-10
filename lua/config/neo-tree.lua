@@ -1,11 +1,14 @@
 require 'neo-tree'.setup({
+	use_libuv_file_watcher = true,
 	window = {
 		width = 30,
 		close_if_last_window = true,
 		enable_git_status = true,
+		winbar = false,
 		enable_diagnostics = true,
-		mappings = {
-			['<M-1>'] = 'toggle_node'
-		}
-	}
+		mapping_options = {
+			noremap = true,
+			nowait = true,
+		},
+	},
 })
