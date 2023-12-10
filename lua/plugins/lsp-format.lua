@@ -1,2 +1,3 @@
 return {
-	{ "lukas-reineke/lsp-format.nvim" } }
+	{ "lukas-reineke/lsp-format.nvim" }
+}
