@@ -5,6 +5,11 @@ require 'neodev'.setup {
 local lspconfig = require 'lspconfig'
 local lspfmt = require 'lsp-format'
 
+-- ruby
+require 'lspconfig'.solargraph.setup {
+}
+
+-- lua
 lspconfig.lua_ls.setup({
 	on_attach = lspfmt.on_attach,
 	settings = {
