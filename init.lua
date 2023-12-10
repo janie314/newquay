@@ -21,3 +21,4 @@ require("lazy").setup("plugins")
 -- load config
 require("config.keymaps")
 require("config.neo-tree")
+require("config.lsp")

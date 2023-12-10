@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<A-1>", "<cmd>Neotree toggle<cr>")
+vim.keymap.set('n', '<A-1>', '<cmd>Neotree toggle<cr>')
