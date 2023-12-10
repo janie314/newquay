@@ -17,5 +17,7 @@ vim.cmd('source ~/.vimrc')
 
 -- load plugins
 require("lazy").setup("plugins")
+
+-- load config
 require("config.keymaps")
 require("config.neo-tree")
