@@ -1,7 +1,25 @@
+local set_hl_for_floating_window = function()
+	vim.api.nvim_set_hl(0, 'NormalFloat', {
+		link = 'Normal',
+	})
+	vim.api.nvim_set_hl(0, 'FloatBorder', {
+		bg = 'none',
+	})
+end
+
+set_hl_for_floating_window()
+
+vim.api.nvim_create_autocmd('ColorScheme', {
+	pattern = '*',
+	desc = 'Avoid overwritten by loading color schemes later',
+	callback = set_hl_for_floating_window,
+})
+
+
 require("tokyonight").setup({
 	-- your configuration comes here
 	-- or leave it empty to use the default settings
-	style = "day",       -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+	style = "moon",      -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
 	light_style = "day", -- The theme is used when the background is set to light
 	transparent = true,  -- Enable this to disable setting the background color
 	terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
