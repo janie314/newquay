@@ -1,5 +1,12 @@
 require 'neo-tree'.setup({
 	use_libuv_file_watcher = true,
+	filesystem = {
+		filtered_items = {
+			visible = true,
+			hide_dotfiles = false,
+			hide_gitignored = true,
+		},
+	},
 	window = {
 		width = 30,
 		close_if_last_window = true,

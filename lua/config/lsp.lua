@@ -7,6 +7,7 @@ local lspfmt = require 'lsp-format'
 
 -- ruby
 require 'lspconfig'.solargraph.setup {
+	on_attach = lspfmt.on_attach,
 }
 
 -- lua
