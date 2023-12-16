@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/janie314/peppermint
-  revision: ad71835c25f2b8cbac8b402b3fcb7650f2b88750
+  revision: ff543149fb39732c8a379fc5f27b9dc20c19fdf7
   specs:
-    peppermint (0.1.5)
+    peppermint (0.1.6)
       pry-byebug
       rake (~> 13.0)
       rdoc
@@ -37,7 +37,7 @@ GEM
     method_source (1.0.0)
     nokogiri (1.15.5-x86_64-linux)
       racc (~> 1.4)
-    parallel (1.23.0)
+    parallel (1.24.0)
     parser (3.2.2.4)
       ast (~> 2.4.1)
       racc
@@ -53,7 +53,7 @@ GEM
     rainbow (3.1.1)
     rake (13.1.0)
     rbs (2.8.4)
-    rdoc (6.6.1)
+    rdoc (6.6.2)
       psych (>= 4.0.0)
     regexp_parser (2.8.3)
     reverse_markdown (2.1.1)
@@ -142,4 +142,4 @@ DEPENDENCIES
   peppermint!
 
 BUNDLED WITH
-   2.4.22
+   2.5.1
