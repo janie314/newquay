@@ -1,5 +1,6 @@
 local custom_16color = require 'lualine.themes.16color'
-custom_16color.normal.b.bg = '#424040';
+custom_16color.normal.b.bg = 'black';
+custom_16color.normal.c.bg = 'blue';
 
 require('lualine').setup {
 	options = {

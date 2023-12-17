@@ -20,7 +20,7 @@ cmp.setup {
 	mapping = cmp.mapping.preset.insert({
 		['j'] = cmp.mapping.select_next_item(),
 		['k'] = cmp.mapping.select_prev_item(),
-		['<Esc>'] = cmp.mapping.abort(),
+		['<CR>'] = cmp.mapping.abort(),
 		['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 	}),
 }
@@ -28,13 +28,14 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- ruby
 require 'lspconfig'.solargraph.setup {
-	cmd          = { "bundle", "exec", "solargraph", "stdio" },
-	on_attach    = lspfmt.on_attach,
-	capabilities = capabilities,
-	init_options = {
+	cmd                 = { "bundle", "exec", "solargraph", "stdio" },
+	on_attach           = lspfmt.on_attach,
+	capabilities        = capabilities,
+	single_file_support = true,
+	init_options        = {
 		formatting = true,
 	},
-	settings     = {
+	settings            = {
 		solargraph = {
 			diagnostics = true
 		}
@@ -65,6 +66,10 @@ lspconfig.lua_ls.setup({
 		}
 	}
 })
+
+-- rust
+require 'lspconfig'.rust_analyzer.setup {
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
