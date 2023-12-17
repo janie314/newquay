@@ -13,6 +13,20 @@ require 'neo-tree'.setup({
 		enable_git_status = true,
 		-- winbar = false,
 		enable_diagnostics = true,
+		mappings = {
+			["a"] = {
+				"add",
+				config = {
+					show_path = "none" -- "none", "relative", "absolute"
+				}
+			},
+			["A"] = "add_directory",
+			["d"] = "delete",
+			["r"] = "rename",
+			["y"] = "copy_to_clipboard",
+			["x"] = "cut_to_clipboard",
+			["p"] = "paste"
+		},
 		mapping_options = {
 			noremap = true,
 			nowait = true,

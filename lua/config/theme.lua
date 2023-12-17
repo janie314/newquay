@@ -33,3 +33,12 @@ do
 end
 vim.api.nvim_set_hl(0, "BufferCurrent", { bg = '#141414', sp = '#141414' })
 vim.api.nvim_set_hl(0, "BufferCurrentIcon", { bg = '#141414', sp = '#141414' })
+
+-- terminal popup
+require 'FTerm'.setup({
+	border     = 'double',
+	dimensions = {
+		height = 0.9,
+		width = 0.9,
+	},
+})
