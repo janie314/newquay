@@ -1,7 +1,10 @@
+local custom_16color = require 'lualine.themes.16color'
+custom_16color.normal.b.bg = '#424040';
+
 require('lualine').setup {
 	options = {
 		icons_enabled = true,
-		theme = 'auto',
+		theme = custom_16color,
 		component_separators = { left = '', right = '' },
 		section_separators = { left = '', right = '' },
 		disabled_filetypes = {
