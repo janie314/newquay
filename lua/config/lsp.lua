@@ -5,14 +5,36 @@ require 'neodev'.setup {
 local lspconfig = require 'lspconfig'
 local lspfmt = require 'lsp-format'
 
+
+-- completions
+local cmp = require 'cmp'
+cmp.setup {
+	snippet = {
+		expand = function(args)
+			require('luasnip').lsp_expand(args.body)
+		end,
+	},
+	sources = {
+		{ name = 'nvim_lsp' }
+	},
+	mapping = cmp.mapping.preset.insert({
+		['j'] = cmp.mapping.select_next_item(),
+		['k'] = cmp.mapping.select_prev_item(),
+		['<Esc>'] = cmp.mapping.abort(),
+		['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+	}),
+}
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 -- ruby
 require 'lspconfig'.solargraph.setup {
-	cmd = { "bundle", "exec", "solargraph", "stdio" },
-	on_attach = lspfmt.on_attach,
+	cmd          = { "bundle", "exec", "solargraph", "stdio" },
+	on_attach    = lspfmt.on_attach,
+	capabilities = capabilities,
 	init_options = {
 		formatting = true,
 	},
-	settings = {
+	settings     = {
 		solargraph = {
 			diagnostics = true
 		}
@@ -22,6 +44,7 @@ require 'lspconfig'.solargraph.setup {
 -- lua
 lspconfig.lua_ls.setup({
 	on_attach = lspfmt.on_attach,
+	capabilities = capabilities,
 	settings = {
 		Lua = {
 			completion = {

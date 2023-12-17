@@ -1,11 +1,11 @@
 vim.opt.termguicolors = true
 
--- float window theming
-for _, grp in ipairs({ "FloatBorder", "NormalFloat", "FloatTitle", "TelescopeFloat", "TelescopeNormal" })
+-- float window and menu/selection theming
+for _, grp in ipairs({ "FloatBorder", "NormalFloat", "FloatTitle", "TelescopeFloat", "TelescopeNormal", "Pmenu" })
 do
 	vim.api.nvim_set_hl(0, grp, { fg = "cyan", sp = "cyan", bg = "#310033" })
 end
-
+vim.api.nvim_set_hl(0, "PmenuSel", { fg = "cyan", bg = "gray" })
 -- turn off error-highlighting of '_'
 vim.api.nvim_set_hl(0, "MarkdownError", { link = "NONE" })
 
