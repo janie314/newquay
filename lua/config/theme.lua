@@ -10,7 +10,7 @@ vim.api.nvim_set_hl(0, "PmenuSel", { fg = "cyan", bg = "gray" })
 vim.api.nvim_set_hl(0, "MarkdownError", { link = "NONE" })
 
 -- syntax colors
-vim.api.nvim_set_hl(0, "Normal", { fg = 'cyan', bg = 'black' })
+vim.api.nvim_set_hl(0, "Normal", { fg = 'white', bg = 'black' })
 vim.api.nvim_set_hl(0, "NonText", { fg = 'brown' })
 vim.api.nvim_set_hl(0, "Comment", { fg = 'lightgreen', italic = true })
 vim.api.nvim_set_hl(0, "Todo", { fg = 'black', bg = 'orange' })
