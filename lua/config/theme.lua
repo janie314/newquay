@@ -33,5 +33,3 @@ do
 end
 vim.api.nvim_set_hl(0, "BufferCurrent", { bg = '#141414', sp = '#141414' })
 vim.api.nvim_set_hl(0, "BufferCurrentIcon", { bg = '#141414', sp = '#141414' })
--- vim.api.nvim_set_hl(0, "BufferAlternateMod", { fg = 'lightblue', ctermfg = 'lightblue', bg = 'blue', ctermbg = "blue" })
--- vim.api.nvim_set_hl(0, "BufferVisibleMod", { fg = 'lightblue', ctermfg = 'lightblue', bg = 'blue', ctermbg = "blue" })
