@@ -1,3 +1,7 @@
-# Eager Vim
+# Newquay
 
-Lazy Vim, but not Lazy. This will make Neovim as easy to use as VS Code soon.
+A Neovim environment as easy and powerful as VS Code.
+
+# TODO
+
+So much stuff...
