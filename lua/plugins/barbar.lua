@@ -2,7 +2,6 @@ return {
 	{
 		'romgrk/barbar.nvim',
 		dependencies = {
-
 			'lewis6991/gitsigns.nvim',
 			'nvim-tree/nvim-web-devicons',
 		},
@@ -14,6 +13,6 @@ return {
 			auto_hide = false,
 			clickable = true,
 		},
-		version = '^1.0.0',
+		version = "^1.0.0",
 	},
 }

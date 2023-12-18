@@ -23,9 +23,6 @@ require 'neo-tree'.setup({
 			["A"] = "add_directory",
 			["d"] = "delete",
 			["r"] = "rename",
-			["y"] = "copy_to_clipboard",
-			["x"] = "cut_to_clipboard",
-			["p"] = "paste"
 		},
 		mapping_options = {
 			noremap = true,
