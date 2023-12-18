@@ -9,7 +9,7 @@ for _, grp in ipairs {
     "TelescopeNormal",
     "Pmenu",
 } do
-    vim.api.nvim_set_hl(0, grp, { fg = "cyan", sp = "cyan", bg = "#310033" })
+    vim.api.nvim_set_hl(0, grp, { fg = "cyan", bg = "#310033" })
 end
 vim.api.nvim_set_hl(0, "PmenuSel", { fg = "cyan", bg = "gray" })
 
