@@ -37,17 +37,7 @@ lspconfig.lua_ls.setup( {
   settings = {
     Lua = {
       completion = { enable = true, callSnippet = "Replace" },
-      format = {
-        enable = true,
-        defaultConfig = {
-          indent_style = "space",
-          indent_size = "2",
-          quote_style = "single",
-          call_arg_parentheses = "remove",
-          remove_call_expression_list_finish_comma = true
-        }
-      }
-
+      format = { enable = false }
     }
   }
 } )

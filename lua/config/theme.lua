@@ -2,16 +2,13 @@ vim.opt.termguicolors = true
 
 -- float window and menu/selection theming
 for _, grp in ipairs( {
-  "FloatBorder",
-  "NormalFloat",
-  "FloatTitle",
-  "TelescopeFloat",
-  "TelescopeNormal",
-  "Pmenu"
+  "FloatBorder", "NormalFloat", "FloatTitle", "TelescopeFloat",
+  "TelescopeNormal", "Pmenu"
 } ) do
   vim.api.nvim_set_hl( 0, grp, { fg = "cyan", sp = "cyan", bg = "#310033" } )
 end
 vim.api.nvim_set_hl( 0, "PmenuSel", { fg = "cyan", bg = "gray" } )
+
 -- turn off error-highlighting of '_'
 vim.api.nvim_set_hl( 0, "MarkdownError", { link = "NONE" } )
 
@@ -24,12 +21,7 @@ vim.api.nvim_set_hl( 0, "Operator", { fg = "orange" } )
 vim.api.nvim_set_hl( 0, "Identifier", { fg = "cyan", bold = true } )
 vim.api.nvim_set_hl( 0, "LineNr", { fg = "lightcyan" } )
 for _, grp in ipairs( {
-  "Conditional",
-  "Repeat",
-  "Keyword",
-  "Label",
-  "Statement",
-  "Special"
+  "Conditional", "Repeat", "Keyword", "Label", "Statement", "Special"
 } ) do vim.api.nvim_set_hl( 0, grp, { fg = "#e699ff", bold = true } ) end
 
 -- barbar theming

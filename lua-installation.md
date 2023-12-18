@@ -11,11 +11,6 @@
 # Lua Formatter
 
 ```shell
-find -name '*.lua' -exec ~/.lua/bin/lua-format -i \
-  --spaces-inside-functioncall-parens --align-parameter --no-use-tab \
-  --indent-width=2 --chop-down-parameter --single-quote-to-double-quote \
-  --spaces-inside-functioncall-parens --spaces-inside-functiondef-parens \
-  --align-table-field --chop-down-table \
-  --chop-down-kv-table --spaces-inside-table-braces {} \;
+find -name '*.lua' -exec ~/.lua/bin/lua-format -i --spaces-inside-functioncall-parens --no-use-tab --indent-width=2 --single-quote-to-double-quote --spaces-before-call=1 --spaces-inside-functioncall-parens --spaces-inside-functiondef-parens --align-table-field --spaces-inside-table-braces --break-after-table-lb  --break-before-table-rb {} \;
 ```
 
