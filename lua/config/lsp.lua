@@ -4,6 +4,19 @@ require("neodev").setup {}
 local lspconfig = require "lspconfig"
 local lspfmt = require "lsp-format"
 
+-- diagnostics
+require("trouble").setup {
+    position = "right", 
+	action_keys = {
+        toggle_mode = "m", 
+        preview = "p", 
+        next = "j" ,
+    },
+    multiline = true, 
+    indent_lines = true, 
+    win_config = { border = "single" }, 
+}
+
 -- completions
 local cmp = require "cmp"
 cmp.setup {
