@@ -5,3 +5,5 @@ group :development do
 end
 
 gem "thor", "~> 1.3"
+
+gem "semantic_logger", "~> 4.15"
