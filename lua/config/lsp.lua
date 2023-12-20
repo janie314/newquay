@@ -6,15 +6,15 @@ local lspfmt = require "lsp-format"
 
 -- diagnostics
 require("trouble").setup {
-    position = "right", 
-	action_keys = {
-        toggle_mode = "m", 
-        preview = "p", 
-        next = "j" ,
+    position = "right",
+    action_keys = {
+        toggle_mode = "m",
+        preview = "p",
+        next = "j",
     },
-    multiline = true, 
-    indent_lines = true, 
-    win_config = { border = "single" }, 
+    multiline = true,
+    indent_lines = true,
+    win_config = { border = "single" },
 }
 
 -- completions
@@ -47,10 +47,11 @@ lspconfig.solargraph.setup {
 lspconfig.lua_ls.setup {
     on_attach = lspfmt.on_attach,
     capabilities = capabilities,
+    single_file_support = true,
     settings = {
         Lua = {
             completion = { enable = true, callSnippet = "Replace" },
-            format = { enable = false },
+            format = { enable = true },
         },
     },
 }
