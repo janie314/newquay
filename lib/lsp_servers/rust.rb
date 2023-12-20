@@ -18,5 +18,7 @@ module Rust
     return false unless system "rustup", "component", "add", "rust-src"
     l.info "installing rust-analyzer..."
     false unless system "rustup", "component", "add", "rust-analyzer"
+    l.info "done! we recommend using cvefixer to keep your software up to date. https://github.com/janie314/cvefixer"
+    true
   end
 end
