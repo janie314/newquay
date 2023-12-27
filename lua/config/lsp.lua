@@ -33,8 +33,17 @@ cmp.setup {
 }
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+-- deno
+lspconfig.denols.setup {
+	on_attach = lspfmt.on_attach,
+	capabilities = capabilities,
+	single_file_support = true,
+	filetypes = {"javascript", "javascriptreact","typescript","typescriptreact","json","jsonc","markdown"},
+    root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc", "package.json"),
+}
+
 -- golang
-require 'lspconfig'.gopls.setup {
+lspconfig.gopls.setup {
 	on_attach = lspfmt.on_attach,
 	capabilities = capabilities,
 	single_file_support = true,
