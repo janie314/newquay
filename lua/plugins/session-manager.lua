@@ -1,5 +1,5 @@
 return {
-    {
-        "Shatur/neovim-session-manager",
-    },
+  {
+    "Shatur/neovim-session-manager",
+  },
 }
