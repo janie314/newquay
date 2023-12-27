@@ -11,6 +11,12 @@
 # Lua Formatter
 
 ```shell
-find -name '*.lua' -exec ~/.lua/bin/lua-format -i --spaces-inside-functioncall-parens --no-use-tab --indent-width=2 --single-quote-to-double-quote --spaces-before-call=1 --spaces-inside-functioncall-parens --spaces-inside-functiondef-parens --align-table-field --spaces-inside-table-braces --break-after-table-lb  --break-before-table-rb {} \;
+cargo install stylua --features lua54
 ```
 
+Usage
+
+```shell
+stylua --call-parentheses None --indent-type Spaces \
+  --indent-width 2 --quote-style AutoPreferDouble --collapse-simple-statement Always .
+```

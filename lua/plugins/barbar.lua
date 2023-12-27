@@ -8,8 +8,8 @@ return {
       highlight_visible = true,
       animation = true,
       auto_hide = false,
-      clickable = true
+      clickable = true,
     },
-    version = "^1.0.0"
-  }
+    version = "^1.0.0",
+  },
 }

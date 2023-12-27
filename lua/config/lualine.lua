@@ -1,8 +1,8 @@
 local custom_16color = require "lualine.themes.16color"
-custom_16color.normal.b.bg = "black";
-custom_16color.normal.c.bg = "blue";
+custom_16color.normal.b.bg = "black"
+custom_16color.normal.c.bg = "blue"
 
-require( "lualine" ).setup {
+require("lualine").setup {
   options = {
     icons_enabled = true,
     theme = custom_16color,
@@ -12,7 +12,7 @@ require( "lualine" ).setup {
     ignore_focus = {},
     always_divide_middle = true,
     globalstatus = true,
-    refresh = { statusline = 1000, tabline = 1000, winbar = 1000 }
+    refresh = { statusline = 1000, tabline = 1000, winbar = 1000 },
   },
   sections = {
     lualine_a = { "mode" },
@@ -20,7 +20,7 @@ require( "lualine" ).setup {
     lualine_c = { "filename" },
     lualine_x = { "encoding", "fileformat", "filetype" },
     lualine_y = { "progress" },
-    lualine_z = { "location" }
+    lualine_z = { "location" },
   },
   inactive_sections = {
     lualine_a = {},
@@ -28,10 +28,10 @@ require( "lualine" ).setup {
     lualine_c = { "filename" },
     lualine_x = { "location" },
     lualine_y = {},
-    lualine_z = {}
+    lualine_z = {},
   },
   tabline = {},
   winbar = {},
   inactive_winbar = {},
-  extensions = {}
+  extensions = {},
 }
