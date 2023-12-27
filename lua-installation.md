@@ -18,6 +18,5 @@ Usage
 
 ```shell
 stylua --call-parentheses None --indent-type Spaces \
-  --quote-style AutoPreferDouble --collapse-simple-statement Always .
+  --indent-width 2 --quote-style AutoPreferDouble --collapse-simple-statement Always .
 ```
-
