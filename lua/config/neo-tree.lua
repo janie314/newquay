@@ -32,11 +32,17 @@ neotree.setup {
 
 require("session_manager").setup {
     autosave_ignore_filetypes = { "neo-tree", "gitcommit", "gitrebase" },
+    autoload_mode = require("session_manager.config").AutoloadMode.CurrentDir,
 }
 
 local config_group = vim.api.nvim_create_augroup("MyConfigGroup", {}) -- A global group for all your config autocommands
 vim.api.nvim_create_autocmd({ "User" }, {
     pattern = "SessionLoadPost",
     group = config_group,
-    callback = function() require("neo-tree.command").execute { toggle = true, position = "left" } end,
+    callback = function()
+        require("neo-tree.command").execute {
+            toggle = true,
+            position = "left",
+        }
+    end,
 })
