@@ -1,8 +1,11 @@
 # Lua
 
-1. `sudo dnf install ninja-build`
-1. git clone https://github.com/LuaLS/lua-language-server
-1. ./lua-language-server/make.sh
+```shell
+sudo dnf install ninja-build libstdc++-static
+cd ~
+git clone https://github.com/LuaLS/lua-language-server
+./lua-language-server/make.sh
+```
 
 # Ruby
 
