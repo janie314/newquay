@@ -13,7 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- load vimrc
-vim.cmd "source ~/.vimrc"
+vim.wo.number = true
 
 -- load plugins
 require("lazy").setup "plugins"
