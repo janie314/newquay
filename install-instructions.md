@@ -1,4 +1,4 @@
-# LSP Installation
+    # LSP Installation
 
 In order to use Neovim properly you have in install some LSPs!
 
