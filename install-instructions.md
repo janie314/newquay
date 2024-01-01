@@ -1,6 +1,6 @@
 # LSP Installation
 
-[[_TOC_]]
+[[TOC]]
 
 In order to use Neovim properly you have in install some LSPs!
 
