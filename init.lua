@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- standard vim-level settings
 vim.wo.number = true
+vim.opt.swapfile = false
 
 -- load plugins
 require("lazy").setup "plugins"
