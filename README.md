@@ -14,4 +14,4 @@ git clone https://github.com/janie314/newquay $HOME/.config/nvim
 ```
 
 3. Install the LSPs you need:
-   https://github.com/janie314/newquay/blob/v0.4/install-instructions.md.
+   https://github.com/janie314/newquay/blob/main/install-instructions.md

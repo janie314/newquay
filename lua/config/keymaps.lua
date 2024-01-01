@@ -3,10 +3,10 @@ local neotree = require "neo-tree.command"
 local trouble = require "trouble"
 
 vim.keymap.set("n", "<F3>", function()
-	neotree.execute {
-		toggle = true,
-		position = "left",
-	}
+  neotree.execute {
+    toggle = true,
+    position = "left",
+  }
 end)
 
 -- yes, i had no choice but to change "q" to "m"
