@@ -1,4 +1,4 @@
-    # LSP Installation
+# LSP Installation
 
 In order to use Neovim properly you have in install some LSPs!
 
@@ -36,17 +36,10 @@ git clone https://github.com/LuaLS/lua-language-server
 
 2. Now make sure `lua-language-server` is in your PATH.
 
-### Lua Formatter
+3. Install the StyLua Lua formatter:
 
 ```shell
 cargo install stylua --features lua54
-```
-
-Usage
-
-```shell
-stylua --call-parentheses None --indent-type Spaces \
-  --indent-width 2 --quote-style AutoPreferDouble --collapse-simple-statement Always .
 ```
 
 ## Ruby
