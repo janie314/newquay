@@ -1,7 +1,5 @@
 # LSP Installation
 
-[[TOC]]
-
 In order to use Neovim properly you have in install some LSPs!
 
 Here are instructions to install the LSPs which Newquay supports.
