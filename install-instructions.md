@@ -38,6 +38,10 @@ git clone https://github.com/LuaLS/lua-language-server
 
 3. Install the StyLua Lua formatter:
 
+First install Rust (see below).
+
+Then:
+
 ```shell
 cargo install stylua --features lua54
 ```
