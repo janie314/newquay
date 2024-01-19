@@ -72,8 +72,14 @@ lspconfig.lua_ls.setup {
 	},
 }
 
+-- elm
+lspconfig.elmls.setup{
+	on_attach = lspfmt.on_attach,
+	capabilities = capabilities,
+}
+
 -- rust
-require("lspconfig").rust_analyzer.setup {}
+lspconfig.rust_analyzer.setup {}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
